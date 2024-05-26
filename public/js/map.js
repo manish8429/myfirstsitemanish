@@ -1,7 +1,4 @@
-const mapToken = process.env.MAP_TOKEN;
-
 mapboxgl.accessToken = mapToken;
-
 
 const map = new mapboxgl.Map({
   container: "map", // container ID
@@ -19,5 +16,3 @@ const marker1 = new mapboxgl.Marker({ color: "red" })
     )
   )
   .addTo(map);
-
-  console.log(mapToken);
